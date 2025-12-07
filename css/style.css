@@ -3,6 +3,22 @@ html {
     scroll-behavior: smooth;
 }
 
+.skip a {
+  background: white;
+  position: absolute;
+  top: -65px;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus,
+.skip a:active {
+  top: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff7ef;
